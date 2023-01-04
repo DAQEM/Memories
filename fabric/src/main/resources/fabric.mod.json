@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "memories",
+  "version": "${version}",
+  "name": "Memories",
+  "description": "",
+  "authors": [
+    "DAQEM"
+  ],
+  "contact": {
+    "homepage": "https://daqem.com/",
+    "sources": "https://github.com/DAQEM/JobsPlusRemastered"
+  },
+  "license": "MIT",
+  "icon": "assets/memories/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.daqem.memories.fabric.client.MemoriesFabricClient"
+    ]
+  },
+  "mixins": [
+    "memories.mixins.json",
+    "memories-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.19.2",
+    "architectury": ">=6.2.43"
+  }
+}
